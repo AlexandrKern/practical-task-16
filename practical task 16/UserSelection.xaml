@@ -1,0 +1,24 @@
+﻿<Window x:Class="online_store.UserSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practical_task_16"
+        mc:Ignorable="d"
+        Title="Выбор пользователя" Height="200" Width="300"
+        MaxHeight="200" MinHeight="200" MaxWidth="300" MinWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="comboBox"  Margin="50,26,50,26" Loaded="ComboBox_Loaded">
+            <ComboBoxItem x:Name="buyer">Покупатель</ComboBoxItem>
+            <ComboBoxItem x:Name="seller">Продавец</ComboBoxItem>
+        </ComboBox>
+        
+        <Button Content="Подтвердить" Margin="50,26,50,26"  Grid.Row="1" Click="Button_Click" />
+        
+
+    </Grid>
+</Window>

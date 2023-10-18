@@ -1,0 +1,4 @@
+﻿select
+TableWorkingWithTheBuyer.ProductCode,
+TableWorkingWithTheBuyer.ProductName
+from TableWorkingWithTheBuyer

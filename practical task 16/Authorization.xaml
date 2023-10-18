@@ -1,0 +1,24 @@
+﻿<Window x:Class="online_store.Authorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practical_task_16"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="300" Width="300"
+        MaxHeight="300" MinHeight="300" MaxWidth="300" MinWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBoxLogin" Margin="40,20,40,20"  />
+        <TextBox x:Name="textBoxPassword" Grid.Row="1"  Margin="40,20,40,20" />
+        <Button Content="Войти" Grid.Row="2" Click="Button_Click_1"   />
+        <Button Content="Зарегистрироваться" Grid.Row="3"  Click="Button_Click"   />
+        <TextBlock  Margin="120,0,120,50"  Text="Логин" />
+        <TextBlock  Margin="120,0,120,50" Grid.Row="1"  Text="Пароль" />
+    </Grid>
+</Window>
